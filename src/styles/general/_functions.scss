@@ -2,3 +2,17 @@
     width : $width;
     height: $height;
 }
+
+@mixin flex($justify, $align: $justify){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin absoluteCenter($top, $bottom: $top, $right: $top, $left: $top){
+    top: $top;
+    bottom: $bottom;
+    left: $left;
+    right: $right;
+    margin: auto;
+}

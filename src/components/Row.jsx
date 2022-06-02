@@ -1,12 +1,16 @@
+import SmoothList from "react-smooth-list";
 import { Letter } from "./Letter";
 
-export const Row = ({ data, rowKey, arr }) => {
+export const Row = ({ data, rowKey, word, className }) => {
 
     return (
-        <div className="row">
-            {arr.map((value, key) => (
-                <Letter letter={data[rowKey][key]} key={key} />
+        <article className="row">
+            {word.map((value, key) => (
+                <section className="border" key={key}>
+                    <Letter letter={data[rowKey][key]} key={key} className={className[rowKey][key]} />
+                </section>
             ))}
-        </div>
+        </article>
+
     );
 };

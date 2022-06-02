@@ -1,13 +1,25 @@
-.letter{
+.border{
     @include wh(70px);
-    background-color: transparent;
     border: 2px solid white;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+.letter{
+    @include flex(center);
     color: white;
     font-family: 'Poppins', sans-serif;
     font-size: 3rem;
     text-transform: uppercase;
+    box-sizing: content-box;
+    height: inherit;
+}
+
+.found{
+    background-color: $red;
+}
+
+.almost{
+    background-color: $yellow;
+    border-radius: 50%;
 }

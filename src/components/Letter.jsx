@@ -1,7 +1,5 @@
-export const Letter = ({ letter }) => {
+export const Letter = ({ letter, className }) => {
     return (
-        <div className="letter" >
-            {letter}
-        </div>
+        letter ? <p className={`letter${className ? ' ' + className : ''}`} >{letter}</p> : ''
     );
 };

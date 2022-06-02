@@ -1,0 +1,8 @@
+.rules{
+    position: absolute;
+    width: 40rem;
+    height: 30rem;
+    background-color: red;
+    @include absoluteCenter(0);
+    display: flex;
+}
